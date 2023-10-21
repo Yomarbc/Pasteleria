@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+
+/* CSS del menu superior */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 25px 25px;
+    z-index: 10;
+    background-color: #b6dde3;
+    opacity: 0.9        ;
+}
+header.abajo{
+    color: #c7c7c7;
+    background-color: #1c1c1c;
+    opacity: 1;
+    padding: 10px 15px;
+}
+
+header .MY{
+    position: relative;
+    color: #1c1c1c;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #493627;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header.abajo .MY,
+header.abajo ul li a{
+    color: #c7c7c7;
+}
+
+footer{
+    background-color: #493627;
+  
+}
+table {
+
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td{
+    color: white    ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+table a{
+    color: white;
+    
+}
+
+table p{
+    color: white;
+}
+
+table p p{
+    color: white;
+}
+
+table img{
+    color: white;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+table h3{
+    color: white;
+    padding-right: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-image: url(Imagenes/Fondo.jpg);
+    background-attachment: fixed;
+}
+
+
+.contenido{
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 50px;
+    background-color: #b4764f;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenido h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+.contenido p{
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.contenido table h4{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.contenido h2{
+text-align: center;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }

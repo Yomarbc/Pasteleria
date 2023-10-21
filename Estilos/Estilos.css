@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+
+/* CSS del menu superior */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 25px 25px;
+    z-index: 10;
+    background-color: #b6dde3;
+    opacity: 0.9        ;
+}
+header.abajo{
+    color: #c7c7c7;
+    background-color: #1c1c1c;
+    opacity: 1;
+    padding: 10px 15px;
+}
+
+header .MY{
+    position: relative;
+    color: #1c1c1c;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #493627;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header.abajo .MY,
+header.abajo ul li a{
+    color: #c7c7c7;
+}
+
+/* ----------------------------------CSS para Slideshows------------------------*/
+
+* {box-sizing:border-box}
+
+/* contenedor del Slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* 
+Ocultar las imágenes por defecto */
+.mySlides {
+  display: none;
+}
+
+
+
+/* Botones siguiente y anterior*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posicion del "botón siguiente" a la derecha */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Al pasar el cursor, agregue un color de fondo negro con un poco de transparencia.*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto del título */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Texto Numerico */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Los puntos/viñetas/indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;  
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animacion */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+/* CSS para el pie de pagina*/
+
+footer{
+    background-color: #493627;
+  
+}
+table {
+
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td{
+    color: white    ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+table a{
+    color: white;
+    
+}
+
+table p{
+    color: white;
+}
+
+table p p{
+    color: white;
+}
+
+table img{
+    color: white;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+table h3{
+    color: white;
+    padding-right: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* CSS para el contenido de la pagina*/
+
+
+body{
+    background-image: url(Imagenes/Fondo.jpg);
+    background-attachment: fixed;
+}
+
+.contenido{
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 50px;
+    background-color: #b4764f;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenido h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+.contenido p{
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.contenido table h4{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.contenido h2{
+text-align: center;
+}
+/*CSS PARA PAGO*/
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.contenedor {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+/*CSS de contacto*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contenedor3 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/*CSS para Inicio de sesion*/
+

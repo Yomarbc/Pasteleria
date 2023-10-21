@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pasteleria: Dulce Delicia</title>
+    
+    <link rel="stylesheet" href="Estilos/Estilos.css">
+    <link rel="shortcut icon" href="Imagenes/ico.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="JavaScript/Carrito_Script.js"></script>
+    
+</head>
+
+<body>
+        <header>
+            <nav>
+              <ul>
+                <li><a><img src="Imagenes/Logo.png" style="transform: translateX(-10%); border-radius: 10px;" width="150px" ></a></li>
+                <li><a href="Inicio.html"><img src="Imagenes/Inicio.png" width="50px" alt=""></a></li>
+                <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                <li><a href="Ofertas.html">Ofertas</a></li>
+                <li><a href="CatalogoGeneral.html">Catalogo de Productos</a></li>
+                <li><a href="Recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="InicioSesion.html">Iniciar Sesion</a></li>
+
+              </ul>  
+            </nav>
+                
+
+        </header>
+        <br>        <br>        <br>        <br>
+        <br>        <br>        <br>        <br>
+        <br>        <br>        <br>        <br>
+        
+        
+
+    <article class="contenido">
+      
+      <br>
+        <br>
+    <h1>Pago y Envio</h1>
+    <br><br>
+    
+    <div class="row">
+      <div class="col-75">
+        <div class="contenedor" style="width: 50%; transform: translate(8%,0%); position: relative;">
+          <form action="/action_page.php">
+    
+            <div class="row">
+              <div class="col-50">
+                <h3>Direccion de Envio</h3>
+                <label for="fname"><i class="fa fa-user"></i> Nombre Completo</label>
+                <input type="text" id="fname" name="firstname" placeholder="Kevin Eduardo Avalos Morales">
+                <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Kevavalos@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i>Direccion</label>
+                <input type="text" id="adr" name="address" placeholder="5av 2call Zona 0">
+                <label for="city"><i class="fa fa-institution"></i> Departamento</label>
+                <input type="text" id="city" name="city" placeholder="Guatemala">
+    
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">Municipio</label>
+                    <input type="text" id="state" name="state" placeholder="Guatemala">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Codigo Postal</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Forma de Pago</h3>
+                
+                <label for="cname">Nombre de Tarjeta</label>
+                <input type="text" id="cname" name="cardname" placeholder="Kevin Avalos">
+                <label for="ccnum">Numero de Tarjeta de Credito</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">EMes de Expiración</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+    
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Año de Expiración</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Dirección de envío igual que la de facturación.
+            </label>
+
+          </form>
+        </div>
+      </div>
+
+  </div>
+    
+        
+        <div class="container">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="col-sm-8 row" style="transform: translateX(-150%); position: absolute;"></main>
+                <!-- Carrito -->
+                <aside class="col-sm-4" style="transform: translate(700px,-680px);position: relative;">
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->  
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total:  Q. <span id="total"></span></p>
+                    <button id="boton-vaciar" class="btn btn-danger"><a href="Gracias.html">Pagar</a></button>
+                </aside>
+            </div>
+        </div>
+
+
+       
+      
+    </article>
+<br><br>
+        
+
+
+</body>
+
+
+<footer>
+        <table>
+            <tr>
+                <td><h3>CONOCENOS</h3></td>
+                <td><h3>UNETE AL EQUIPO</h3></td>
+                <td><h3>SIGUENOS:</h3></td>
+                <td><h3>AYUDA Y CONTACTO</h3></td>
+                <td><h3>DIRECCION Y HORARIOS</h3></td>
+            </tr>
+            <tr>
+                <td><a href="QuienesSomos.html"><p>Quienes somos</p></a></td>
+                <td><a href="InicioSesion.html"><p>Inicio de Sesion</p></a></td>
+                <td><img src="Imagenes/instagram_logo.png" width="50px"><a href="https://www.instagram.com/">@Dulce_DeliciaGT</a></td>
+                <td><img src="Imagenes/Logo_whatsapp.png" style="border-radius: 100px;" width="50px"><a href="https://web.whatsapp.com/">4684-2319</a></td>
+                <td rowspan="2"><p>Direccion</p><p>Centro Comercial Real del Parque 7Av 8-41 zona 1 
+                </p><p>Guatemala Guatemala, 01001</p></td>
+            </tr>
+
+            <tr>
+                <td><a href="Trabajo.html"><p>Trabaja con Nosotros</p></td>
+                <td><a href="Registro.html"><p>Registro</p></td>
+                <td><img src="Imagenes/Logo_facebook.png" width="50px"><a href="https://www.facebook.com/">Dulce Delicia</td>
+                <td><img src="Imagenes/gmail_logo.png" width="50px"><a href="">Soporte_@DeliciaGT.com</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href="Condiciones.html"><p>Terminos y Condiciones</p></td>
+                <td><a href="Mayoreo.html"><p>Mayoreo</p></td>
+                <td><img src="Imagenes/logo_tiktok.png" width="50px"><a href="https://www.tiktok.com/">@Dulce_Delicia212</td>
+                <td><img src="Imagenes/telefono_logo.png" width="50px">PBX: 6643-0054</td>
+                <td rowspan="2"><p>Horario: </p><br> <p>Lunes a Viernes: </p>  <p>8:00 a.m. - 7:00 p.m.</p>  <p>Domingo: </p>  <p>9:00 a.m. - 2:00 p.m.</p></td>
+            </tr>
+            <tr>
+                <td><a href="Politicas.html"><p>Politica de Privacidad</p></td>
+                <td></td>
+                <td><img src="Imagenes/Logo_twitter.png" width="50px"><a href="https://www.twitter.com/">@Dulce_DeliciaGT</td>
+                <td><img src="Imagenes/preguntas_logo.png" width="50px" style="border-radius: 100px;"><a href="Preguntas.html">Preguntas Frecuentes</td>
+               
+            </tr>
+
+        </table>
+</footer>
+
+
+</html>
